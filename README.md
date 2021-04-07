@@ -1,7 +1,7 @@
 # slinky
 ## Start Time 1330
 ## End Time 2030
-
+## Lab 11
 ### Initial work in app to learn Spring.  
 ### Feature tasks
 ### Ensure that you can run the Spring app.
@@ -11,3 +11,13 @@
 - Create an Album class to act as a model in our app.
 - An Album has a title, an artist, a songCount, a length (in seconds), and an imageUrl that is a link to that album’s art.
 - Create a route at /albums that shows three album instances. (These will be hardcoded for today’s lab; create an array that contains three albums, and then display those three on the page.)
+
+## Lab 12 
+### Feature Tasks
+- Update your Album model so that it can be saved in a database.
+- An Album has a title, an artist, a songCount, a length (in seconds), and an imageUrl that is a link to that album’s art.
+- A user should be able to see information about all the albums on the site.
+- A user should be able to add albums to the site.
+
+## Stat Time 1330
+## End Time 2040
