@@ -16,6 +16,10 @@ public class Album {
 
     }
 
+    public Album (){
+
+    }
+
     public String getTitle() {
         return title;
     }
@@ -35,4 +39,8 @@ public class Album {
     public String getImageURL() {
         return imageURL;
     }
+
+
+
+
 }
