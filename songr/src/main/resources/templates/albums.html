@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<<<<<<< HEAD
     <form action="/albums" method="POST"></form>
         <fieldset>
             <input type ="text" placeholder="title" name="title">
@@ -28,5 +29,14 @@
             <P>Length of Album: <span th:text="${album.length}"></span> seconds</P>
             <img th:src="${album.imageURL}">
     </div>
+=======
+<div th:each="album : ${displayedAlbums}">
+    <h1 th:text="${album.title}">Album TITLE</h1>
+    <p>Artist: <span th:text="${album.artist}"></span></p>
+    <p>Number of Songs: <span th:text="${album.songCount}"></span></p>
+    <P>Length of Album: <span th:text="${album.length}"></span> Minutes</P>
+    <img th:src="${album.imageURL}">
+</div>
+>>>>>>> 39cfa0c70ae46e5d91d47dcee128a800293568cb
 </body>
 </html>
