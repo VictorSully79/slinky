@@ -38,5 +38,11 @@ public class SongrToolsController {
         return "albums.html";
     }
 
+    @GetMapping("/")
+    public String showHomePage(){
 
+
+        return "welcome-home.html";
+        }
     }
+

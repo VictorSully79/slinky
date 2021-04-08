@@ -1,5 +1,6 @@
 package com.victorsully79.songr;
 
+
 public class Album {
     String title;
     String artist;
