@@ -1,12 +1,20 @@
 package com.victorsully79.songr;
+import javax.persistence.*;
+import java.util.List;
 
-
+@Entity
 public class Album {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    long id;
     String title;
     String artist;
     String imageURL;
     int songCount;
     int length;
+
+    @OneToMany(mappedBy = "albumTitle", cascade = CascadeType.ALL)
+    List<MusicManager> musicManager;
 
     public Album(String title, String artist, String imageURL, int songCount, int length) {
         this.title = title;
@@ -32,6 +40,7 @@ public class Album {
     public int getSongCount() {
         return songCount;
     }
+
 
     public int getLength() {
         return length;

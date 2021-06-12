@@ -7,16 +7,20 @@ The controller tells SPRING to use this class as a controller file.
 */
 
 import com.sun.org.apache.xpath.internal.operations.Mod;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.view.RedirectView;
 
 import java.util.ArrayList;
 import java.util.Locale;
 
 @Controller
 public class SongrToolsController {
+    @Autowired
     //      Routes are ANNOTATED to with 'METHODMapping' "ANNOTATIONS"
     static ArrayList<Album> displayedAlbums = new ArrayList<>();
 
@@ -59,20 +63,20 @@ public class SongrToolsController {
         return "albums.html";
     }
 
-<<<<<<< HEAD
+
     @GetMapping("/")
     public String showHomePage(){
 
 
         return "welcome-home.html";
         }
-    }
 
-=======
+
+
     @GetMapping("/capitalize/{phrase}")
     public String getCapitalizedPage(Model m, @PathVariable String phrase){
         m.addAttribute("phrase", phrase.toUpperCase(Locale.ROOT));
         return "capitalize.html";
     }
 }
->>>>>>> 39cfa0c70ae46e5d91d47dcee128a800293568cb
+
