@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="309c2c44-ef87-4bec-82e7-fe4fae082f7e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/songr/src/main/java/com/victorsully79/songr/SongrToolsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/songr/src/main/java/com/victorsully79/songr/SongrToolsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/songr/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/songr/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/songr/src/main/resources/templates/albums.html" beforeDir="false" afterPath="$PROJECT_DIR$/songr/src/main/resources/templates/albums.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,5 +46,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

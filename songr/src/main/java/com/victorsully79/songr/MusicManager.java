@@ -12,7 +12,7 @@ public class MusicManager {
 
 
 
-@ManyToOne
+@OneToMany
 Album albumTitle;
 
 public MusicManager(){}
@@ -24,7 +24,8 @@ public MusicManager(int length, int trackNumber, Album albumTitle){
 }
 
 public int getLength(){
-return length;
+
+    return length;
 }
 
 public int getTrackNumber(){
